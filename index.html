@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="شركة تنظيف فلل في الإمارات العربية المتحدة — نظافة عميقة، تعقيم وعناية متكاملة بالمنزل."
+    />
+    <meta name="theme-color" content="#123a63" />
+    <title>شركة تنظيف فلل | الإمارات العربية المتحدة</title>
+    <style>
+      :root {
+        --navy: #10365b;
+        --navy-deep: #082641;
+        --blue: #1675d1;
+        --blue-soft: #e9f4ff;
+        --green: #18a96b;
+        --green-dark: #08754a;
+        --ink: #17314b;
+        --muted: #6c8194;
+        --line: #e5edf3;
+        --cream: #f6f9fb;
+        --white: #ffffff;
+        --shadow: 0 24px 70px rgba(11, 49, 82, 0.15);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 9% 12%, rgba(22, 117, 209, 0.11), transparent 28rem),
+          radial-gradient(circle at 93% 88%, rgba(24, 169, 107, 0.1), transparent 27rem),
+          var(--cream);
+        font-family: Tahoma, Arial, sans-serif;
+        line-height: 1.7;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page {
+        width: min(100% - 32px, 1080px);
+        margin: 0 auto;
+        padding: 38px 0;
+      }
+
+      .flyer {
+        position: relative;
+        overflow: hidden;
+        background: var(--white);
+        border: 1px solid rgba(16, 54, 91, 0.06);
+        border-radius: 30px;
+        box-shadow: var(--shadow);
+        isolation: isolate;
+      }
+
+      .flyer::before,
+      .flyer::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        width: 250px;
+        height: 250px;
+        border: 1px solid rgba(22, 117, 209, 0.1);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .flyer::before {
+        top: -142px;
+        left: -132px;
+        box-shadow:
+          0 0 0 24px rgba(22, 117, 209, 0.035),
+          0 0 0 48px rgba(22, 117, 209, 0.025);
+      }
+
+      .flyer::after {
+        right: -147px;
+        bottom: -150px;
+        border-color: rgba(24, 169, 107, 0.12);
+        box-shadow:
+          0 0 0 24px rgba(24, 169, 107, 0.04),
+          0 0 0 48px rgba(24, 169, 107, 0.025);
+      }
+
+      .side-rail {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 17px;
+        background: var(--blue);
+      }
+
+      .side-rail::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 17px;
+        height: 37%;
+        background: var(--green);
+        content: "";
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 28px 58px 10px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--navy);
+        font-weight: 800;
+        font-size: 1.1rem;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 45px;
+        height: 45px;
+        place-items: center;
+        color: var(--white);
+        background: linear-gradient(145deg, var(--blue), var(--navy));
+        border-radius: 14px 14px 14px 4px;
+        box-shadow: 0 8px 18px rgba(22, 117, 209, 0.25);
+      }
+
+      .brand-mark svg {
+        width: 25px;
+        height: 25px;
+      }
+
+      .top-note {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--green-dark);
+        font-size: 0.83rem;
+        font-weight: 700;
+      }
+
+      .top-note::before {
+        display: block;
+        width: 9px;
+        height: 9px;
+        background: var(--green);
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(24, 169, 107, 0.12);
+        content: "";
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.08fr 0.92fr;
+        align-items: center;
+        gap: 34px;
+        padding: 52px 72px 56px 58px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        margin: 0 0 17px;
+        color: var(--blue);
+        font-size: 0.88rem;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+      }
+
+      .eyebrow::before {
+        width: 27px;
+        height: 3px;
+        background: var(--green);
+        border-radius: 20px;
+        content: "";
+      }
+
+      h1 {
+        max-width: 590px;
+        margin: 0;
+        color: var(--navy-deep);
+        font-size: clamp(2.25rem, 5vw, 4.25rem);
+        line-height: 1.16;
+        letter-spacing: -0.04em;
+      }
+
+      h1 span {
+        display: block;
+        color: var(--blue);
+      }
+
+      .hero-copy {
+        max-width: 550px;
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .location {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 20px;
+        padding: 8px 13px;
+        color: var(--navy);
+        background: var(--blue-soft);
+        border-radius: 10px;
+        font-size: 0.88rem;
+        font-weight: 800;
+      }
+
+      .location svg {
+        width: 17px;
+        height: 17px;
+        color: var(--blue);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11px;
+        margin-top: 27px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        min-height: 51px;
+        padding: 0 20px;
+        border-radius: 12px;
+        font-size: 0.92rem;
+        font-weight: 800;
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          filter 180ms ease;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        transform: translateY(-3px);
+        filter: saturate(1.08);
+      }
+
+      .button:focus-visible {
+        outline: 3px solid rgba(22, 117, 209, 0.3);
+        outline-offset: 3px;
+      }
+
+      .button svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .button-call {
+        color: var(--white);
+        background: var(--blue);
+        box-shadow: 0 9px 20px rgba(22, 117, 209, 0.23);
+      }
+
+      .button-whatsapp {
+        color: var(--white);
+        background: var(--green);
+        box-shadow: 0 9px 20px rgba(24, 169, 107, 0.22);
+      }
+
+      .visual {
+        position: relative;
+        min-height: 345px;
+      }
+
+      .visual-circle {
+        position: absolute;
+        top: 18px;
+        right: 8%;
+        width: min(310px, 90%);
+        aspect-ratio: 1;
+        border: 1px solid rgba(22, 117, 209, 0.2);
+        border-radius: 50%;
+        background:
+          radial-gradient(circle at 38% 34%, rgba(255, 255, 255, 0.93) 0 5%, transparent 5.5%),
+          linear-gradient(150deg, #eaf6ff, #dceeff 57%, #f0fbf5);
+        box-shadow:
+          inset 0 0 0 17px rgba(255, 255, 255, 0.5),
+          inset 0 0 0 37px rgba(22, 117, 209, 0.05);
+      }
+
+      .visual-circle::before,
+      .visual-circle::after {
+        position: absolute;
+        border-radius: 50%;
+        content: "";
+      }
+
+      .visual-circle::before {
+        right: 6%;
+        bottom: 12%;
+        width: 36%;
+        aspect-ratio: 1;
+        background: rgba(24, 169, 107, 0.16);
+      }
+
+      .visual-circle::after {
+        top: 12%;
+        left: 11%;
+        width: 11%;
+        aspect-ratio: 1;
+        background: var(--green);
+        box-shadow: 0 0 0 10px rgba(24, 169, 107, 0.12);
+      }
+
+      .home-card {
+        position: absolute;
+        top: 76px;
+        right: 18%;
+        display: grid;
+        width: 64%;
+        min-height: 195px;
+        padding: 25px;
+        align-content: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid rgba(16, 54, 91, 0.07);
+        border-radius: 23px;
+        box-shadow: 0 20px 38px rgba(16, 54, 91, 0.12);
+        transform: rotate(4deg);
+      }
+
+      .home-icon {
+        display: grid;
+        width: 75px;
+        height: 75px;
+        margin: 0 auto 10px;
+        place-items: center;
+        color: var(--white);
+        background: linear-gradient(140deg, var(--green), var(--green-dark));
+        border-radius: 50%;
+        box-shadow: 0 12px 24px rgba(24, 169, 107, 0.25);
+      }
+
+      .home-icon svg {
+        width: 39px;
+        height: 39px;
+      }
+
+      .home-card strong {
+        color: var(--navy);
+        font-size: 1.05rem;
+      }
+
+      .home-card small {
+        color: var(--muted);
+        font-size: 0.74rem;
+      }
+
+      .sparkle {
+        position: absolute;
+        color: var(--blue);
+        font-size: 1.8rem;
+        font-weight: 900;
+      }
+
+      .sparkle.one {
+        top: 26px;
+        right: 6%;
+      }
+
+      .sparkle.two {
+        bottom: 28px;
+        left: 8%;
+        color: var(--green);
+        font-size: 1.25rem;
+      }
+
+      .services {
+        margin: 0 58px;
+        padding: 33px 0 39px;
+        border-top: 1px solid var(--line);
+      }
+
+      .section-heading {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 18px;
+        margin-bottom: 20px;
+      }
+
+      .section-heading h2 {
+        margin: 0;
+        color: var(--navy);
+        font-size: 1.52rem;
+        line-height: 1.2;
+      }
+
+      .section-heading p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.84rem;
+      }
+
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .service {
+        min-height: 137px;
+        padding: 17px 15px;
+        background: #fbfdff;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      .service:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 11px 24px rgba(16, 54, 91, 0.08);
+      }
+
+      .service-icon {
+        display: grid;
+        width: 38px;
+        height: 38px;
+        margin-bottom: 9px;
+        place-items: center;
+        color: var(--blue);
+        background: var(--blue-soft);
+        border-radius: 11px;
+      }
+
+      .service:nth-child(even) .service-icon {
+        color: var(--green-dark);
+        background: #e9f8f1;
+      }
+
+      .service-icon svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .service strong {
+        display: block;
+        color: var(--navy);
+        font-size: 0.9rem;
+      }
+
+      .service small {
+        display: block;
+        margin-top: 2px;
+        color: var(--muted);
+        font-size: 0.72rem;
+        line-height: 1.5;
+      }
+
+      .benefits {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        padding: 25px 58px 27px;
+        background: var(--navy);
+        color: var(--white);
+      }
+
+      .benefit {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .benefit-mark {
+        display: grid;
+        flex: 0 0 auto;
+        width: 40px;
+        height: 40px;
+        place-items: center;
+        color: var(--white);
+        background: rgba(255, 255, 255, 0.13);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 50%;
+      }
+
+      .benefit-mark svg {
+        width: 19px;
+        height: 19px;
+      }
+
+      .benefit strong {
+        display: block;
+        font-size: 0.88rem;
+      }
+
+      .benefit small {
+        display: block;
+        color: rgba(255, 255, 255, 0.67);
+        font-size: 0.7rem;
+      }
+
+      .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+        padding: 31px 58px 34px;
+      }
+
+      .contact-label {
+        margin: 0 0 2px;
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+
+      .phone {
+        direction: ltr;
+        color: var(--navy);
+        font-size: clamp(1.55rem, 3vw, 2rem);
+        font-weight: 900;
+        letter-spacing: 0.03em;
+      }
+
+      .contact-note {
+        margin: 3px 0 0;
+        color: var(--muted);
+        font-size: 0.74rem;
+      }
+
+      .contact-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .footer {
+        padding: 12px 58px 24px;
+        color: #8da0ae;
+        font-size: 0.7rem;
+        text-align: center;
+      }
+
+      @media (max-width: 820px) {
+        .hero {
+          grid-template-columns: 1fr;
+          padding-top: 38px;
+        }
+
+        .visual {
+          min-height: 305px;
+          margin: 0 auto;
+          width: min(100%, 420px);
+        }
+
+        .visual-circle {
+          right: 12%;
+          width: 76%;
+        }
+
+        .home-card {
+          right: 22%;
+          width: 56%;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .page {
+          width: min(100% - 18px, 560px);
+          padding: 18px 0;
+        }
+
+        .flyer {
+          border-radius: 22px;
+        }
+
+        .side-rail,
+        .side-rail::after {
+          width: 10px;
+        }
+
+        .topbar,
+        .hero,
+        .contact {
+          padding-right: 30px;
+          padding-left: 30px;
+        }
+
+        .topbar {
+          padding-top: 22px;
+        }
+
+        .top-note {
+          display: none;
+        }
+
+        .hero {
+          gap: 14px;
+          padding-top: 33px;
+          padding-bottom: 34px;
+        }
+
+        h1 {
+          font-size: clamp(2.18rem, 12vw, 3.5rem);
+        }
+
+        .hero-copy {
+          font-size: 0.94rem;
+        }
+
+        .visual {
+          min-height: 275px;
+        }
+
+        .visual-circle {
+          top: 10px;
+          right: 12%;
+        }
+
+        .home-card {
+          top: 58px;
+          right: 24%;
+          min-height: 175px;
+          width: 54%;
+          padding: 18px;
+        }
+
+        .home-icon {
+          width: 64px;
+          height: 64px;
+        }
+
+        .home-icon svg {
+          width: 32px;
+          height: 32px;
+        }
+
+        .services {
+          margin: 0 30px;
+          padding-top: 27px;
+        }
+
+        .section-heading {
+          display: block;
+        }
+
+        .section-heading p {
+          margin-top: 6px;
+        }
+
+        .service-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .benefits {
+          grid-template-columns: 1fr;
+          gap: 15px;
+          padding: 24px 30px;
+        }
+
+        .contact {
+          display: block;
+          padding-top: 27px;
+        }
+
+        .contact-actions {
+          margin-top: 18px;
+        }
+
+        .contact-actions .button {
+          flex: 1 1 145px;
+        }
+
+        .footer {
+          padding-right: 30px;
+          padding-left: 30px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <article class="flyer">
+        <div class="side-rail" aria-hidden="true"></div>
+
+        <header class="topbar">
+          <a class="brand" href="#contact" aria-label="تواصل مع شركة تنظيف فلل">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3.5 11 8.5-7 8.5 7"></path>
+                <path d="M5.5 10.5V20h13v-9.5"></path>
+                <path d="M9.5 20v-5h5v5"></path>
+                <path d="M17.6 3.5v2.1"></path>
+                <path d="m19.1 4.2 1.5-1"></path>
+              </svg>
+            </span>
+            <span>نظافة تليق ببيتك</span>
+          </a>
+          <span class="top-note">نصل إليك في الموعد</span>
+        </header>
+
+        <section class="hero" aria-labelledby="main-title">
+          <div>
+            <p class="eyebrow">خدمة منزلية موثوقة</p>
+            <h1 id="main-title">شركة تنظيف <span>فلل باحتراف</span></h1>
+            <p class="hero-copy">
+              نعيد لبيتك إشراقه ونمنح كل زاوية العناية التي تستحقها، بفريق مدرّب ونتيجة تلاحظها من أول زيارة.
+            </p>
+            <div class="location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="2.5"></circle>
+              </svg>
+              <span>الإمارات العربية المتحدة</span>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-call" href="tel:+971562033771">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"></path>
+                </svg>
+                اتصل الآن
+              </a>
+              <a class="button button-whatsapp" href="https://wa.me/971562033771" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.5 3.5A11.8 11.8 0 0 0 12.05 0C5.5 0 .18 5.32.18 11.87c0 2.09.55 4.13 1.6 5.93L.08 24l6.34-1.66a11.86 11.86 0 0 0 5.63 1.43h.01c6.54 0 11.86-5.33 11.86-11.87 0-3.17-1.23-6.14-3.42-8.4Zm-8.45 18.2h-.01a9.82 9.82 0 0 1-5.01-1.37l-.36-.22-3.76.99 1-3.67-.24-.38a9.81 9.81 0 0 1-1.5-5.19C2.17 6.44 6.59 2 12.04 2c2.64 0 5.12 1.03 6.99 2.91a9.82 9.82 0 0 1 2.9 7c0 5.44-4.43 9.79-9.88 9.79Zm5.4-7.35c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.48-1.77-1.65-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.21 5.08 4.5.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.12-.27-.2-.57-.35Z"></path>
+                </svg>
+                واتساب
+              </a>
+            </div>
+          </div>
+
+          <div class="visual" aria-hidden="true">
+            <div class="visual-circle"></div>
+            <div class="home-card">
+              <div class="home-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m3 11 9-7 9 7"></path>
+                  <path d="M5 10v10h14V10"></path>
+                  <path d="M9 20v-6h6v6"></path>
+                  <path d="m17.5 5.7.6-1.7.6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6Z"></path>
+                </svg>
+              </div>
+              <strong>بيت نظيف، راحة أكبر</strong>
+              <small>عناية دقيقة بكل التفاصيل</small>
+            </div>
+            <span class="sparkle one">✦</span>
+            <span class="sparkle two">✦</span>
+          </div>
+        </section>
+
+        <section class="services" aria-labelledby="services-title">
+          <div class="section-heading">
+            <h2 id="services-title">خدماتنا لفيلا أجمل</h2>
+            <p>حلول تنظيف متكاملة للمنزل</p>
+          </div>
+          <div class="service-grid">
+            <div class="service">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 21h18"></path>
+                  <path d="M6 21V8l6-5 6 5v13"></path>
+                  <path d="M9 21v-5h6v5"></path>
+                  <path d="M9 10h.01M12 10h.01M15 10h.01"></path>
+                </svg>
+              </div>
+              <strong>تنظيف الفلل</strong>
+              <small>تنظيف شامل للغرف والمجالس</small>
+            </div>
+            <div class="service">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m4 14 4-4 4 4 4-4 4 4"></path>
+                  <path d="M4 20h16"></path>
+                  <path d="M7 10V6M17 10V6"></path>
+                  <path d="M5 4h4M15 4h4"></path>
+                </svg>
+              </div>
+              <strong>تنظيف المجالس</strong>
+              <small>عناية بالأثاث والمفروشات</small>
+            </div>
+            <div class="service">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 20h14"></path>
+                  <path d="M7 20V9h10v11"></path>
+                  <path d="M9 9V5h6v4"></path>
+                  <path d="M4 5h16"></path>
+                  <path d="m12 2 .01.01"></path>
+                </svg>
+              </div>
+              <strong>تنظيف المطابخ</strong>
+              <small>إزالة الدهون وتعقيم الأسطح</small>
+            </div>
+            <div class="service">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 20h16"></path>
+                  <path d="M6 20v-8h12v8"></path>
+                  <path d="m8 12 2-8h4l2 8"></path>
+                  <path d="M12 4V2"></path>
+                  <path d="M9 16h.01M12 16h.01M15 16h.01"></path>
+                </svg>
+              </div>
+              <strong>تنظيف عميق</strong>
+              <small>للمداخل والنوافذ والأرضيات</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="benefits" aria-label="مميزات الخدمة">
+          <div class="benefit">
+            <span class="benefit-mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3 4 6v5c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-3Z"></path>
+                <path d="m8.5 12 2.2 2.2 4.8-4.8"></path>
+              </svg>
+            </span>
+            <span><strong>فريق موثوق</strong><small>خبرة واهتمام بالتفاصيل</small></span>
+          </div>
+          <div class="benefit">
+            <span class="benefit-mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 7v5l3 2"></path>
+              </svg>
+            </span>
+            <span><strong>التزام بالمواعيد</strong><small>نصل إليك في الوقت المحدد</small></span>
+          </div>
+          <div class="benefit">
+            <span class="benefit-mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12a8 8 0 0 1 14.5-4.7"></path>
+                <path d="M20 4v5h-5"></path>
+                <path d="M20 12a8 8 0 0 1-14.5 4.7"></path>
+                <path d="M4 20v-5h5"></path>
+              </svg>
+            </span>
+            <span><strong>نتيجة تفرق</strong><small>نظافة وانتعاش يدومان</small></span>
+          </div>
+        </section>
+
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+          <div>
+            <p class="contact-label" id="contact-title">للحجز والاستفسار اتصل بنا</p>
+            <a class="phone" href="tel:+971562033771">056 203 3771</a>
+            <p class="contact-note">خدمة تنظيف فلل في الإمارات العربية المتحدة</p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-call" href="tel:+971562033771">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"></path>
+              </svg>
+              اتصال
+            </a>
+            <a class="button button-whatsapp" href="https://wa.me/971562033771" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.5 3.5A11.8 11.8 0 0 0 12.05 0C5.5 0 .18 5.32.18 11.87c0 2.09.55 4.13 1.6 5.93L.08 24l6.34-1.66a11.86 11.86 0 0 0 5.63 1.43h.01c6.54 0 11.86-5.33 11.86-11.87 0-3.17-1.23-6.14-3.42-8.4Zm-8.45 18.2h-.01a9.82 9.82 0 0 1-5.01-1.37l-.36-.22-3.76.99 1-3.67-.24-.38a9.81 9.81 0 0 1-1.5-5.19C2.17 6.44 6.59 2 12.04 2c2.64 0 5.12 1.03 6.99 2.91a9.82 9.82 0 0 1 2.9 7c0 5.44-4.43 9.79-9.88 9.79Zm5.4-7.35c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.48-1.77-1.65-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.21 5.08 4.5.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.12-.27-.2-.57-.35Z"></path>
+              </svg>
+              واتساب
+            </a>
+          </div>
+        </section>
+
+        <footer class="footer">نظافة تليق ببيتك — احجز موعدك اليوم</footer>
+      </article>
+    </main>
+
+    <script>
+      // Keep the page intentionally dependency-free for direct GitHub Pages hosting.
+      document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          var target = document.querySelector(link.getAttribute("href"));
+          if (target) {
+            event.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
